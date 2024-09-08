@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(55 48 163);
+    /* border: 1px solid yellow; */
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.LoginDiv{
+    /* border: 1px solid yellow; */
+    width: 70%;
+    height: 800px;
+    background-color: rgb(30 58 138);
+    border-radius: 20px;
+    box-shadow: 50px 25px 50px -12px rgb(0 0 0 / 0.50);
+}
+.LoginDiv nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+.LoginDiv nav ul{
+    display: flex;
+    column-gap: 40px;
+}
+.LoginDiv nav ul li{
+    list-style: none;
+}
+.LoginDiv nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.LoginDiv nav h1{
+    color: white;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.LoginDiv nav ul li button{
+    height: 30px;
+    width: 120px;
+    border-radius: 5px;
+    background-color:cornflowerblue;
+    border: none;
+    font-size: large;
+}
+
+
+
+
+
+/* Login part styles */
+
+
+.LoginPart{
+    /* border: 1px solid red; */
+    width: 30%;
+    padding-top: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 15px;
+    border-right: 1px solid cornflowerblue ;
+    border-left: 1px solid cornflowerblue;
+}
+.SignInLogo img{
+    height: 180px;
+    width: 250px;
+}
+.InputField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.InputField input{
+    display: block;
+    width: 70%;
+    height: 30px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 15px;
+    background-color: transparent;
+}
+.InputField input::placeholder{
+    color: white;
+}
+.SignInLogo, .SignInButton{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.SignInButton button{
+    margin-top: 20px;
+    height: 35px;
+    width: 150px;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    background-color:cornflowerblue;
+}
+#UserName{
+    background-image: url('Images/UserNameFieldIcon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center; /*Adjust as needed*/
+    background-size: 23px 23px;
+    padding-left: 40px;
+}
+#Password{
+    background-image: url('Images/PasswordFieldIcon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center; /*Adjust as needed*/
+    background-size: 18px 18px;
+    padding-left: 40px;
+}
