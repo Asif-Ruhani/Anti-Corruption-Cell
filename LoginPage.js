@@ -14,3 +14,16 @@ const RegistrationCancel = () => {
     RegCancel.classList.add('DisplayHidden');
     console.log('Registration form closed');
 }
+
+
+
+// Open Menu options when click the the lines menu bar
+const OpenMenuOptions = () =>{
+    const MenuOptions=document.getElementById('MenuOptions');
+    if(MenuOptions.style.display === "none" || MenuOptions.style.display === ""){
+        MenuOptions.style.display= "block";   // options showed
+    }
+    else {
+        MenuOptions.style.display = "none";  // option closed
+    }
+}

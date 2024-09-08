@@ -1,8 +1,8 @@
 
 body{
-    background-image: url('Images/Programminghero-ezgif.com-webp-to-jpg-converter.jpg');
-    /* background-color: whitesmoke; */
-    /* border: 1px solid yellow; */
+    /* background-image: url('Images/Programminghero-ezgif.com-webp-to-jpg-converter.jpg'); */
+    background-color: whitesmoke;
+    /* border: 1px solid red; */
     padding: 60px;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@ body{
    
 }
 .LoginDiv{
-    /* border: 1px solid yellow; */
+    /* border: 1px solid red; */
     width: 70%;
     height: 800px;
     background-color: black;
@@ -23,7 +23,7 @@ body{
     align-items: center;
     padding: 30px 50px;
 }
-.LoginDiv nav ul{
+.LoginDiv nav ul #MenuOptions{
     display: flex;
     column-gap: 40px;
 }
@@ -63,7 +63,17 @@ body{
 
 
 
+
+
+
+
 /* Login part styles */
+
+
+
+
+
+
 
 .DisplayHidden {
     display: none;
@@ -98,7 +108,7 @@ body{
     background-color: White;
 }
 .InputField input::placeholder{
-    color: black;
+    color: rgba(0, 0, 0, 0.562);
 }
 .SignInLogo, .SignInButton{
     text-align: center;
@@ -157,7 +167,20 @@ body{
 
 
 
+
+
+
+
+
+
 /* Registration form styles */
+
+
+
+
+
+
+
 
 .RegistrationForm{
     /* border: 1px solid red; */
@@ -195,7 +218,7 @@ body{
     margin-bottom: 40px;
 }
 .Reg-InputField input::placeholder{
-    color: black;
+    color: rgba(0, 0, 0, 0.562);
 }
 .Reg-Confirm button{
     margin-top: 40px;
@@ -220,4 +243,135 @@ body{
     float: right;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+
+
+
+
+
+@media screen and (max-width: 576px){
+    body{
+        padding: 0px;   
+    }
+    /* Navigation bar */
+    .LoginDiv{
+        width: 100%;
+        height: 100vh;
+        box-shadow: 0px 0px 0px 0px;
+    }
+    .LoginDiv nav{
+        /* flex-direction: column; */
+        padding: 30px 20px;
+    }
+    .LoginDiv nav ul #MenuOptions{
+        /* flex-direction: column; */
+        display: none;
+
+        position: absolute;
+
+        right: 10px;
+        top: 100px;
+    }
+    .LoginDiv nav ul #MenuOptions li{
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .LoginDiv nav h1{
+        font-size: 1em;
+    }
+    .PLogo-PName img{
+        height: 30px;
+        width: 30px;
+    } 
+
+
+    /* Login-Welcome part */
+
+    .Login-Welcome{
+        /* border: 1px solid red; */
+        flex-direction: column-reverse;
+    }
+    .WelcomePart{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .WelcomePart h1{
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .WelcomePart p{
+        padding: 10px;
+    }
+    .LoginPart{
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 50px;
+        border-radius: 0px;
+        border-right: none ;
+        border-left: none;
+    }
+    .SignInLogo img{
+        height: 80px;
+        width: 80px;
+    }   
+
+
+    /* Registration form styles */
+
+    .RegistrationForm{
+        width: 95%;
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px;
+    
+        border-right: 0;
+        border-left: 0;
+    
+        position: fixed;
+        top: 270px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+    }
+    .PLogo img{
+        height: 80px;
+        width: 80px;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width: 768px){
+   
+    #MenuBar{
+        display: none;
+       }
+}
+
+
+@media screen and (min-width:768px) and (max-width: 992px){
+    #MenuBar{
+        display: none;
+       }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+   #MenuBar{
+    display: none;
+   }
+    
+}
+@media screen and (min-width: 1200px){
+    #MenuBar{
+        display: none;
+       }
 }
