@@ -58,9 +58,8 @@ body{
 .LoginPart{
     /* border: 1px solid red; */
     width: 30%;
-    padding-top: 30px;
-    margin-top: 50px;
     margin-left: 50px;
+    padding-top: 30px;
     border-radius: 15px;
     border-right: 1px solid cornflowerblue ;
     border-left: 1px solid cornflowerblue;
@@ -114,4 +113,29 @@ body{
     background-position: 10px center; /*Adjust as needed*/
     background-size: 18px 18px;
     padding-left: 40px;
+}
+.Login-Welcome{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.WelcomePart{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin-right: 20px;
+    padding-top: 180px;
+}
+.WelcomePart h1{
+  color: white;
+  font-size: 3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.WelcomePart p{
+    color: white;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    padding-right: 30px;
 }
