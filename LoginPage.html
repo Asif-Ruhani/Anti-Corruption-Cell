@@ -6,62 +6,63 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="LoginPage.css">
 </head>
-<body>
+<body>  
 
-    <div class="LoginDiv">
-        <nav>
-            <div class="PLogo-PName">
-                <img src="Images/Sign_In_Logo.png" alt="">
-                <h1>Anti-Corruption Cell</h1>
-            </div>
-          
-                
-                    <ul>
-                        <div id="MenuBar"><button onclick="OpenMenuOptions()"><img src="" alt=""></button></div>
-                        <div id="MenuOptions">
-                        <li><a href="">Instruction</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact us</a></li>
-                        <li><button onclick="RegistrationFormOpen()">Registration</button></li>
-                        </div>
-                    </ul>
-                
-          
-        </nav>
-
-
-        <div class="Login-Welcome">
-            <div class="LoginPart " id="RegistrationForm">
-                <div class="SignInLogo"><img src="Images/Sign_In_Logo.png" alt=""></div>
-               <div class="InputField">
-                  <input id="UserName" type="text" placeholder="User name">
-                  <input id="Password" type="password" placeholder="Password">
-               </div>
-                <div class="SignInButton"><button>Sign in</button></div>
-           </div>
-    
-           <div class="WelcomePart">
-            <h1>Welcome</h1>
-            <p>The Anti-Corruption Cell platform enables citizens to anonymously report corruption, while our team verifies and investigates complaints. By collaborating with authorities, we ensure transparency and accountability in tackling corruption.</p>
-           </div>
+    <nav>
+        <div class="PLogo_PName">
+            <img src="Images/Sign_In_Logo.png" alt="">
+            <h1>Anti-Corruption Cell</h1>
         </div>
 
 
-        <div class="RegistrationForm DisplayHidden" id="RegForm">
-            <div class="PLogo"><img src="Images/Sign_In_Logo.png" alt=""></div>
-            <div class="Reg-InputField">
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Your NID">
-                <input type="text" placeholder="Your Phone number (According to NID)">
-            </div>
-            <div class="Reg-Confirm"><button>Confirm</button></div>
-            <button id="Reg-Cancel" onclick="RegistrationCancel()">Cancel</button>
+        <div class="MenuOptions">
+            <ul>
+                <div class="Language">
+                    <img src="" alt="">
+                    <button>Language</button>
+                </div>
+                <li><a href="">Instruction</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><button onclick="RegistrationFormOpen()">Registration</button></li>
+            </ul>
         </div>
+    </nav>
 
+
+   <main>
+
+    <div class="Login-Welcome">
+        <div class="LoginPart " id="RegistrationForm">
+            <div class="SignInLogo"><img src="Images/Sign_In_Logo.png" alt=""></div>
+           <div class="InputField">
+              <input id="UserName" type="text" placeholder="User name">
+              <input id="Password" type="password" placeholder="Password">
+           </div>
+            <div class="SignInButton"><button>Sign in</button></div>
+       </div>
+
+       <div class="WelcomePart">
+        <h1>Welcome</h1>
+        <p>The Anti-Corruption Cell platform enables citizens to anonymously report corruption, while our team verifies and investigates complaints. By collaborating with authorities, we ensure transparency and accountability in tackling corruption.</p>
+       </div>
     </div>
-    
-    
 
-    <script src="LoginPage.js"></script>
+
+
+    <div class="RegistrationForm DisplayHidden" id="RegForm">
+        <div class="RegImage"><img src="Images/Sign_In_Logo.png" alt=""></div>
+        <div class="Reg-InputField">
+            <input type="text" placeholder="Your name">
+            <input type="text" placeholder="Your NID">
+            <input type="text" placeholder="Your Phone number (According to NID)">
+        </div>
+        <div class="Reg-Confirm"><button>Confirm</button></div>
+        <button id="Reg-Cancel" onclick="RegistrationCancel()">Cancel</button>
+    </div>
+
+   </main>
+
+   <script src="LoginPage.js"></script>    
 </body>
 </html>
