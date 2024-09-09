@@ -3,7 +3,7 @@ body{
     /* background-image: url('Images/Programminghero-ezgif.com-webp-to-jpg-converter.jpg'); */
     background-color: whitesmoke;
     /* border: 1px solid red; */
-    /* padding: 30%; */
+    padding: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,8 +424,8 @@ body{
         text-align: center;
     }
     .LoginPart{
-        width: 60%;
-        margin: 50px auto;
+        width: 50%;
+        margin: 80px auto;
         border-radius: 15px;
         border-right: 1px solid lightgray ;
         border-left: 1px solid lightgray;
@@ -464,6 +464,66 @@ body{
     #MenuBar{
         display: none;
        }
+       body{
+        padding: 0px;
+       }
+
+    .LoginDiv{
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0px 0px 0px -0px;
+}
+.LoginDiv nav{
+    padding: 30px 20px;
+}
+.LoginDiv nav ul #MenuOptions{
+    column-gap: 30px;
+}
+.LoginDiv nav ul li a{
+    font-size: 15px;
+}
+.LoginDiv nav h1{ 
+    font-size: 1em;
+}
+.LoginDiv nav ul li button{
+    height: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+.PLogo-PName img{
+    height: 40px;
+    width: 40px;
+}
+
+/* Login-Welcome part styles */
+
+.LoginPart{
+    margin-top: 100px;
+    width: 40%;
+}
+.SignInLogo img{
+    height: 80px;
+    width: 80px;
+}
+
+.Login-Welcome{ 
+    flex-direction: column-reverse;  
+    align-items: center;
+}
+.WelcomePart{
+    width: 90%;
+    margin-right: 0px;
+}
+.WelcomePart h1{
+  text-align: center;
+}
+.WelcomePart p{
+    padding-right: 0px;
+    text-align: center;
+    margin-top: -1em;
+}
+
+
 }
 
 
@@ -471,6 +531,8 @@ body{
    #MenuBar{
     display: none;
    }
+
+   
     
 }
 @media screen and (min-width: 1200px){
