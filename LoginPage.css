@@ -54,6 +54,9 @@ nav{
     background-color: rgba(0, 0, 255, 0.329);
     border-radius: 5px;
 }
+.MenuOptions ul li button:hover{
+    background-color:rgba(0, 0, 255, 0.637);
+}
 .Language button{
     font-size: 18px;
     border: none;
@@ -62,7 +65,32 @@ nav{
     background-color: rgba(0, 0, 255, 0.329);
     border-radius: 5px;
 }
-
+.Language {
+    position: relative;
+    display: inline-block;
+}
+.DropDownContent{
+    display: none;
+    position: absolute;
+    /* background-color: rgba(0, 0, 255, 0.329); */
+    width: 100px;
+}
+.DropDownContent a{
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    /* text-align: center; */
+}
+.DropDownContent a:hover{
+    color:yellowgreen;
+}
+.Language:hover{
+    background-color: rgba(165, 42, 42, 0.596);
+}
+.Language:hover .DropDownContent{
+    display: block;
+}
 
 
 
