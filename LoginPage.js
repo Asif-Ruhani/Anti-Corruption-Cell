@@ -1,9 +1,23 @@
 
+let isMenuOpen = false;
+
+
 // Open registration form
 const RegistrationFormOpen = () => {
     const RegFormOpen = document.getElementById('RegForm');
     RegFormOpen.classList.remove('DisplayHidden');
     console.log('Registration form opened');
+
+
+    // When registration button is clicked, menu options will be hidden
+    // const MenuOptions=document.getElementById('MenuOptions'); 
+    // isMenuOpen = !isMenuOpen;
+    
+    // if (isMenuOpen) {
+    //     MenuOptions.style.display = "block";  // Show the menu when true
+    // } else {
+    //     MenuOptions.style.display = "none";   // Hide the menu when false
+    // }
 }
 
 
@@ -19,11 +33,12 @@ const RegistrationCancel = () => {
 
 // Open Menu options when click the the lines menu bar
 const OpenMenuOptions = () =>{
-    const MenuOptions=document.getElementById('MenuOptions');
-    if(MenuOptions.style.display === "none" || MenuOptions.style.display === ""){
-        MenuOptions.style.display= "block";   // options showed
-    }
-    else {
-        MenuOptions.style.display = "none";  // option closed
+    const MenuOptions=document.getElementById('MenuOptions'); 
+    isMenuOpen = !isMenuOpen;
+    
+    if (isMenuOpen) {
+        MenuOptions.style.display = "block";  // Show the menu when true
+    } else {
+        MenuOptions.style.display = "none";   // Hide the menu when false
     }
 }

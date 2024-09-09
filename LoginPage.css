@@ -3,7 +3,7 @@ body{
     /* background-image: url('Images/Programminghero-ezgif.com-webp-to-jpg-converter.jpg'); */
     background-color: whitesmoke;
     /* border: 1px solid red; */
-    padding: 60px;
+    /* padding: 30%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ body{
     /* border: 1px solid red; */
     width: 70%;
     height: 800px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border-radius: 20px;
     box-shadow: 50px 25px 50px -12px rgb(0 0 0 / 0.50);
 }
@@ -22,10 +22,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 30px 50px;
+    /* border: 1px solid red; */
 }
 .LoginDiv nav ul #MenuOptions{
     display: flex;
     column-gap: 40px;
+      /* border: 1px solid red; */
 }
 .LoginDiv nav ul li{
     list-style: none;
@@ -52,6 +54,7 @@ body{
 .PLogo-PName{
     display: flex;
     align-items: center;
+    /* border: 1px solid red; */
 }
 .PLogo-PName img{
     height: 50px;
@@ -149,7 +152,7 @@ body{
     /* border: 1px solid red; */
     width: 50%;
     margin-right: 20px;
-    padding-top: 180px;
+    /* padding-top: 180px; */
 }
 .WelcomePart h1{
   color: white;
@@ -266,25 +269,35 @@ body{
     /* Navigation bar */
     .LoginDiv{
         width: 100%;
-        height: 100vh;
         box-shadow: 0px 0px 0px 0px;
+        padding-bottom: 20px;
     }
     .LoginDiv nav{
         /* flex-direction: column; */
         padding: 30px 20px;
+    }
+    .LoginDiv nav ul li button{
+        background-color: skyblue;
+        border: 1px solid black;
     }
     .LoginDiv nav ul #MenuOptions{
         /* flex-direction: column; */
         display: none;
 
         position: absolute;
-
-        right: 10px;
+        right: 20px;
         top: 100px;
+
+        background-color: skyblue;
+        width: 30%;
+        padding: 10px;
     }
     .LoginDiv nav ul #MenuOptions li{
         margin-bottom: 15px;
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .LoginDiv nav ul li a{
+        color: black;
     }
     .LoginDiv nav h1{
         font-size: 1em;
@@ -337,7 +350,7 @@ body{
         border-left: 0;
     
         position: fixed;
-        top: 270px;
+        top: 290px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1000;
@@ -350,10 +363,100 @@ body{
 }
 
 @media screen and (min-width:576px) and (max-width: 768px){
-   
     #MenuBar{
         display: none;
        }
+
+    body{
+        padding: 0px;   
+       }
+
+    /* Navigation bar */
+    .LoginDiv{
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 0px 0px;
+    }
+    .LoginDiv nav{
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+    .LoginDiv nav ul li button{
+        background-color: skyblue;
+        border: 1px solid black;
+    }
+    .LoginDiv nav ul #MenuOptions{
+        margin-right: 30px;
+        width: 100%;
+        column-gap: 50px;
+    }
+    .LoginDiv #MenuOptions li{
+        font-size: 15px;
+    }
+    .LoginDiv nav ul li a{
+        color: white;
+    }
+    .LoginDiv nav h1{
+        font-size: 1.5em;
+    }
+    .PLogo-PName img{
+        height: 30px;
+        width: 30px;
+    } 
+
+
+    /* Login-Welcome part */
+
+    .Login-Welcome{
+        flex-direction: column-reverse;
+        margin-top: 0px;
+    }
+    .WelcomePart{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .WelcomePart h1{
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .WelcomePart p{
+        padding: 10px;
+        text-align: center;
+    }
+    .LoginPart{
+        width: 60%;
+        margin: 50px auto;
+        border-radius: 15px;
+        border-right: 1px solid lightgray ;
+        border-left: 1px solid lightgray;
+    }
+    .SignInLogo img{
+        height: 80px;
+        width: 80px;
+    }   
+
+
+    /* Registration form styles */
+
+    .RegistrationForm{
+        width: 60%;
+        background-color: black;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 0px;
+    
+        border-right: 3px solid white ;
+        border-left: 3px solid white;
+    
+        position: fixed;
+        top: 330px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+    }
+    .PLogo img{
+        height: 80px;
+        width: 80px;
+    }
 }
 
 
