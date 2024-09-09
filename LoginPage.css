@@ -6,8 +6,7 @@ body{
     padding: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;  
 }
 .LoginDiv{
     /* border: 1px solid red; */
@@ -47,7 +46,7 @@ body{
     height: 30px;
     width: 120px;
     border-radius: 5px;
-    background-color:cornflowerblue;
+    background-color: skyblue;
     border: none;
     font-size: large;
 }
@@ -124,7 +123,7 @@ body{
     font-size: larger;
     border: none;
     border-radius: 5px;
-    background-color:cornflowerblue;
+    background-color: skyblue;
 }
 #UserName{
     background-image: url('Images/UserIcon.png');
@@ -145,14 +144,13 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    
+    margin-top: 50px;   
 }
 .WelcomePart{
     /* border: 1px solid red; */
     width: 50%;
     margin-right: 20px;
-    /* padding-top: 180px; */
+    padding-top: 150px;
 }
 .WelcomePart h1{
   color: white;
@@ -230,7 +228,7 @@ body{
     font-size: larger;
     border: none;
     border-radius: 5px;
-    background-color: cornflowerblue;
+   background-color: skyblue;
     margin-right: 20px;
 
     margin-bottom: 50px;
@@ -241,7 +239,7 @@ body{
     font-size: larger;
     border: none;
     border-radius: 5px;
-    background-color: cornflowerblue;
+    background-color: skyblue;
 
     float: right;
     margin-right: 20px;
@@ -276,12 +274,7 @@ body{
         /* flex-direction: column; */
         padding: 30px 20px;
     }
-    .LoginDiv nav ul li button{
-        background-color: skyblue;
-        border: 1px solid black;
-    }
     .LoginDiv nav ul #MenuOptions{
-        /* flex-direction: column; */
         display: none;
 
         position: absolute;
@@ -291,6 +284,9 @@ body{
         background-color: skyblue;
         width: 30%;
         padding: 10px;
+    }
+    .LoginDiv nav ul li button{
+        border: 1px solid black;
     }
     .LoginDiv nav ul #MenuOptions li{
         margin-bottom: 15px;
@@ -381,14 +377,11 @@ body{
         flex-direction: column;
         padding: 30px 0px;
     }
-    .LoginDiv nav ul li button{
-        background-color: skyblue;
-        border: 1px solid black;
-    }
     .LoginDiv nav ul #MenuOptions{
         margin-right: 30px;
         width: 100%;
         column-gap: 50px;
+        align-items: center;
     }
     .LoginDiv #MenuOptions li{
         font-size: 15px;
@@ -478,6 +471,7 @@ body{
 }
 .LoginDiv nav ul #MenuOptions{
     column-gap: 30px;
+    align-items: center;
 }
 .LoginDiv nav ul li a{
     font-size: 15px;
@@ -486,7 +480,7 @@ body{
     font-size: 1em;
 }
 .LoginDiv nav ul li button{
-    height: 20px;
+    height: 30px;
     width: 100px;
     font-size: 15px;
 }
@@ -513,6 +507,7 @@ body{
 .WelcomePart{
     width: 90%;
     margin-right: 0px;
+    padding-top: 20px;
 }
 .WelcomePart h1{
   text-align: center;
@@ -522,20 +517,55 @@ body{
     text-align: center;
     margin-top: -1em;
 }
+.RegistrationForm{  
+    width: 50%;
+    position: fixed;
+    top: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 }
 
 
-@media screen and (min-width: 992px) and (max-width: 1200px){
+@media screen and (min-width: 992px) and (max-width: 1300px){
    #MenuBar{
     display: none;
    }
-
+   .LoginDiv{
+    width: 85%;
+  }
+  .LoginDiv nav{
+    padding: 30px 30px;
+  }
+  .LoginDiv nav ul li a{ 
+    font-size: large;
+}
+.LoginDiv nav h1{
+    font-size: 1.7em;
+}
+.Login-Welcome{
+    margin-top: 100px;
+}
+.WelcomePart{
+    margin-right: 0px;
+    padding-top: 100px;
+}
+.WelcomePart h1{
+  font-size: 2.7em;
+}
+.WelcomePart p{
+    padding-right: 20px;
+}
+.RegistrationForm{  
+    margin-top: 50px;
+    width: 32%;
+} 
    
     
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1300px){
     #MenuBar{
         display: none;
        }
