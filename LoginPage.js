@@ -18,22 +18,31 @@ const RegistrationCancel = () => {
 }
 
 
+// Toggle the manu for small devices
+function toggleMenu() {
+    const LanguagImage=document.getElementById('LanguageImage');
+    LanguagImage.classList.add('DisplayHidden');
 
-// Open Menu options when click the the lines menu bar
-const OpenMenuOptions = () =>{
-    const MenuOptions=document.getElementById('MenuOptions'); 
-    isMenuOpen = !isMenuOpen;
-    
-    if (isMenuOpen) {
-        MenuOptions.style.display = "block";  // Show the menu when true
-    } else {
-        MenuOptions.style.display = "none";   // Hide the menu when false
-    }
+    const menu = document.getElementById('menu');
+
+    if (menu.style.display === "block"){
+            menu.style.display = "none";
+       } 
+    else{
+        menu.style.display = "block";
+      }
 }
 
-function toggleMenu() {
-    const menu = document.querySelector('.Menu');
-    const LanguagImage=document.getElementById('LanguageImage');
-    LanguagImage.classList.add('DisplayHidden');  // before showing the menu on the screen, the language image will be hidden
-    menu.classList.toggle('show');
+
+
+// Toggle Language option
+const ToggleLanguage = () => {
+    const Language=document.getElementById('DropDownContent');
+
+    if(Language.style.display === "block"){
+        Language.style.display = "none";
+    }
+    else{
+        Language.style.display = "block";
+    }
 }

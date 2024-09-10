@@ -70,7 +70,7 @@ nav ul img{
     width: 130px;
     background-color: rgba(0, 0, 255, 0.329);
     border-radius: 5px;
-    color: whitesmoke;
+    color: white;
 }
 .RegistrationButton{
     font-size: 16px;
@@ -79,7 +79,7 @@ nav ul img{
     width: 130px;
     background-color: rgba(0, 0, 255, 0.329);
     border-radius: 5px;
-    color: whitesmoke;
+    color: white;
 }
 /* .PLogo_PName{
     display: flex;
@@ -326,7 +326,7 @@ nav ul img{
     }
     .Menu{
         flex-direction: column;
-        /* border: 1px solid yellow; */
+        background-color: rgb(73, 2, 84);
 
         align-items: baseline;
         position: absolute;
@@ -391,20 +391,79 @@ nav ul img{
         display: block;
     }
     .LanguageButton{
+        font-size: 18px;
         padding-left: 10px;
+        background-color: transparent;
+        border: 1px solid white;
     }
+    .RegistrationButton{
+        font-size: 18px;
+        border: 1px solid white;
+        background-color: transparent;
+    }
+    .Login-Welcome{
+        width: 100%;
+        margin: 20px auto;
+        flex-direction: column-reverse;
+    }
+    .WelcomePart{
+        width: 90%;
+        padding-top: 0px;
+        margin: 0px auto;
+    }
+    .WelcomePart h1{
+      font-size: 2.5em;
+      text-align: center;
+    }
+    .LoginPart{
+        margin: 50px auto;
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .SignInLogo img{
+        height: 80px;
+        width: 80px;
+    }
+    .SignInLogo, .SignInButton{
+        margin-bottom: 30px;
+    }
+    
+.RegistrationForm{
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+   position: fixed;
+   top: 290px;
+   left: 50%;  /* Moves the div to the center of the screen */
+   transform: translateX(-50%); /* Adjusts for half of the div's width */
+   z-index: 1000; 
+}
+.RegImage img{
+    height: 80px;
+    width: 80px;
+}
+    
+    
 }
 
 @media screen and (min-width:576px) and (max-width:768px){
-
+   .hamburger-menu{
+    display: none;
+   }
 }
 
 @media screen and (min-width:768px) and (max-width:1000px){
-
+    .hamburger-menu{
+        display: none;
+       }
 }
 
 @media screen and (min-width:1000px) and (max-width:1550px){
-    
+    .hamburger-menu{
+        display: none;
+    }
     .LoginPart{
         width: 27%;
     }
@@ -415,4 +474,10 @@ nav ul img{
         padding-bottom: 30px;
     }
     
+}
+
+@media screen and (min-width:1550px) {
+    .hamburger-menu{
+        display: none;
+       }
 }
