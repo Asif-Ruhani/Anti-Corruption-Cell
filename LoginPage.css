@@ -335,7 +335,7 @@ nav ul img{
         display: none;  /* By default manu will be hidden*/
     }
     .Menu.show {
-        display: block;    /* When this class is called from js file, menu will be display block to show on the screen*/
+        display: block;    /* When this class is called from js file, menu will be "display block" to show on the screen*/
     }
     .Menu li{
         list-style: none;
