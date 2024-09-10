@@ -10,27 +10,31 @@
 
     <nav>
         <div class="PLogo_PName">
-            <img src="Images/Sign_In_Logo.png" alt="">
-            <h1>Anti-Corruption Cell</h1>
+             <div class="lOGO"><img src="Images/White logo.png" alt=""></div>
+
+             <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+             </div>
+            <!-- <img src="Images/Sign_In_Logo.png" alt="">
+            <h1>Anti-Corruption Cell</h1> -->
         </div>
 
-
-        <div class="MenuOptions">
-            <ul>
-                <div class="Language">
-                    <!-- <img src="" alt=""> -->
-                    <button class="DropDownButton">Language</button>
-                    <div class="DropDownContent">
-                        <a href="">English</a>
-                        <a href="">Bangla</a>
-                    </div>
+        <ul class="Menu">
+            <div class="LanguageImage" id="LanguageImage"><img src="Images/LanguageIcon-removebg-preview.png" alt=""></div>
+            <li><button class="LanguageButton">Language<span>&#9662;</span></button>
+                <div class="DropDownContent">
+                    <a href="">English</a>
+                    <a href="">Bangla</a>
                 </div>
-                <li><a href="">Instruction</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><button onclick="RegistrationFormOpen()">Registration</button></li>
-            </ul>
-        </div>
+            </li>
+            <li><a href="">Instruction</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><button class="RegistrationButton" onclick="RegistrationFormOpen()">Registration</button></li>
+        </ul>
+
     </nav>
 
 
@@ -62,7 +66,7 @@
             <input type="text" placeholder="Your Phone number (According to NID)">
         </div>
         <div class="Reg-Confirm"><button>Confirm</button></div>
-        <button id="Reg-Cancel" onclick="RegistrationCancel()">Cancel</button>
+        <button id="Reg-Cancel" onclick="RegistrationCancel()">Close</button>
     </div>
 
    </main>

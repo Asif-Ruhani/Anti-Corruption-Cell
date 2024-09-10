@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: cornflowerblue;
+    background-color: rgb(73, 2, 84);   /* this is asif's color*/
 }
 
 
@@ -19,10 +19,69 @@ nav{
     align-items: center;
     
     width: 80%;
-    margin: 100px auto;
+    margin: 50px auto;
     /* border: 1px solid yellow; */
 }
-.PLogo_PName{
+nav ul{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+nav ul img{
+    height: 25px;
+    width: 25px;
+}
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.DropDownContent{
+    display: none;
+    position: absolute;
+    width: 100px;
+}
+.DropDownContent a{
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+    color: whitesmoke;
+    /* margin-left: 30px; */
+}
+nav ul li:hover .DropDownContent{
+    display: block;
+}
+.DropDownContent a:hover{
+    color:yellowgreen;
+}
+nav ul img{
+    position: relative;
+    left: 75px;
+}
+.LanguageButton{
+    font-size: 16px;
+    padding-left: 40px;
+    border: none;
+    height: 35px;
+    width: 130px;
+    background-color: rgba(0, 0, 255, 0.329);
+    border-radius: 5px;
+    color: whitesmoke;
+}
+.RegistrationButton{
+    font-size: 16px;
+    border: none;
+    height: 35px;
+    width: 130px;
+    background-color: rgba(0, 0, 255, 0.329);
+    border-radius: 5px;
+    color: whitesmoke;
+}
+/* .PLogo_PName{
     display: flex;
     align-items: center;
 }
@@ -33,63 +92,34 @@ nav{
 }
 .PLogo_PName h1{
     font-size: 2.2em;
-}
-.MenuOptions ul{
+    color: whitesmoke;
+} */
+ .PLogo_PName{
+    /* border: 1px solid yellow; */
+    height: 125px;
+    width: 200px;
+ }
+ .PLogo_PName div{
+    margin-left: 70px;
+ }
+ .PLogo_PName img{
+    height: 125px;
+    width: 200px;
+ }
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
     display: flex;
-    align-items: center;
-    column-gap: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    float: right;
 }
-.MenuOptions ul li{
-    list-style: none;
-}
-.MenuOptions ul li a{
-    text-decoration: none;
-    font-size: 22px;
-}
-.MenuOptions ul li button{
-    font-size: 18px;
-    border: none;
-    height: 30px;
-    width: 120px;
-    background-color: rgba(0, 0, 255, 0.329);
+
+.bar {
+    width: 100%;
+    height: 2px;
+    background-color: white;
     border-radius: 5px;
-}
-.MenuOptions ul li button:hover{
-    background-color:rgba(0, 0, 255, 0.637);
-}
-.Language button{
-    font-size: 18px;
-    border: none;
-    height: 30px;
-    width: 100px;
-    background-color: rgba(0, 0, 255, 0.329);
-    border-radius: 5px;
-}
-.Language {
-    position: relative;
-    display: inline-block;
-}
-.DropDownContent{
-    display: none;
-    position: absolute;
-    /* background-color: rgba(0, 0, 255, 0.329); */
-    width: 100px;
-}
-.DropDownContent a{
-    text-decoration: none;
-    display: block;
-    margin-top: 15px;
-    font-size: 20px;
-    /* text-align: center; */
-}
-.DropDownContent a:hover{
-    color:yellowgreen;
-}
-.Language:hover{
-    background-color: rgba(165, 42, 42, 0.596);
-}
-.Language:hover .DropDownContent{
-    display: block;
 }
 
 
@@ -104,7 +134,7 @@ nav{
 .Login-Welcome{
     /* border: 1px solid yellow; */
     width: 80%;
-    margin: 50px auto;
+    margin: 100px auto;
     display: flex;
     justify-content: space-between;
 }
@@ -143,8 +173,8 @@ nav{
     padding-top: 50px;
     padding-bottom: 50px;
     border-radius: 15px;
-    border-right: 1px solid yellow ;
-    border-left: 1px solid yellow;
+    border-right: 1px solid whitesmoke ;
+    border-left: 1px solid whitesmoke;
 }
 .SignInLogo img{
     height: 100px;
@@ -179,7 +209,8 @@ nav{
     font-size: larger;
     border: none;
     border-radius: 5px;
-    background-color: rgba(0, 0, 255, 0.123);
+    background-color: rgba(0, 0, 255, 0.329);
+    color: whitesmoke;
 }
 #UserName{
     background-image: url('Images/UserIcon.png');
@@ -216,14 +247,15 @@ nav{
 
 .RegistrationForm{
     /* border: 1px solid yellow; */
-    width: 25%;
+    width: 22%;
     background-color: cornflowerblue;
     border-radius: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: rgb(73, 2, 84);
 
-    border-right: 3px solid yellow ;
-    border-left: 3px solid yellow;
+    border-right: 3px solid whitesmoke ;
+    border-left: 3px solid whitesmoke;
 
     position: fixed;
     top: 250px;
@@ -259,7 +291,8 @@ nav{
     font-size: larger;
     border: none;
     border-radius: 5px;
-    background-color: rgba(0, 0, 255, 0.123);
+    background-color: rgba(0, 0, 255, 0.329);
+    color: whitesmoke;
 }
 #Reg-Cancel{
     height: 35px;
@@ -267,8 +300,119 @@ nav{
     font-size: larger;
     border: none;
     border-radius: 5px;
-    background-color: rgba(0, 0, 255, 0.123);
+    background-color: rgba(0, 0, 255, 0.329);
+    color: whitesmoke;
 
     float: right;
     margin-right: 20px;
+}
+
+
+
+
+
+
+/* Responsive styels */
+
+@media screen and (max-width: 576px){
+    
+    nav{
+        flex-direction: column;
+       
+        
+        width: 100%;
+        margin: 20px 0px;
+        /* border: 1px solid yellow; */
+    }
+    .Menu{
+        flex-direction: column;
+        /* border: 1px solid yellow; */
+
+        align-items: baseline;
+        position: absolute;
+        top: 90px;
+        left: 225px;
+        display: none;  /* By default manu will be hidden*/
+    }
+    .Menu.show {
+        display: block;    /* When this class is called from js file, menu will be display block to show on the screen*/
+    }
+    .Menu li{
+        list-style: none;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .DropDownContent{
+        width: 100px;
+        right: 110px;
+        top: -10px;
+    }
+    nav ul img{
+        position: relative;
+        left: 75px;
+    }
+    
+     .PLogo_PName{
+        /* border: 1px solid yellow; */
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+     .PLogo_PName div{
+        margin-left: 0px;
+     }
+     .PLogo_PName img{
+        height: 100px;
+        width: 180px;
+     }
+    .hamburger-menu {
+        width: 35px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: right;
+    }
+    
+    .bar {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    .hamburger-menu {
+        height: 25px;
+        margin-right: 20px;
+    }
+    .hamburger-menu:hover .Menu{
+        display: block;
+    }
+    .LanguageButton{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:768px){
+
+}
+
+@media screen and (min-width:768px) and (max-width:1000px){
+
+}
+
+@media screen and (min-width:1000px) and (max-width:1550px){
+    
+    .LoginPart{
+        width: 27%;
+    }
+    .RegistrationForm{
+        width: 25%;
+        top: 150px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
 }

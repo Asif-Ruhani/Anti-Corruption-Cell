@@ -3,69 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Button</title>
-    <style>
+    <title>Hamburger Menu</title>
+    <STYle>
         body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+.bar {
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px;
 }
 
-.dropdown-content {
+.menu-content {
     display: none;
+    flex-direction: column;
     position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+.menu-content a {
+    padding: 12px;
     text-decoration: none;
+    color: black;
     display: block;
+    text-align: center;
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
+.menu-content a:hover {
+    background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+.show {
+    display: flex;
 }
 
-    </style>
-    
+    </STYle>
 </head>
 <body>
 
-<div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-        <a href="#">Option 1</a>
-        <a href="#">Option 2</a>
-        <a href="#">Option 3</a>
-    </div>
+<div class="hamburger-menu">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+</div>
+
+<div id="menu" class="menu-content">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
 </div>
 
 <script>
-    document.querySelector('.dropbtn').addEventListener('click', function() {
-    const dropdownContent = document.querySelector('.dropdown-content');
-    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-});
+    function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+}
+
 </script>
 </body>
 </html>

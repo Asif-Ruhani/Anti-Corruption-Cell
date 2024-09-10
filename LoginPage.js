@@ -30,3 +30,10 @@ const OpenMenuOptions = () =>{
         MenuOptions.style.display = "none";   // Hide the menu when false
     }
 }
+
+function toggleMenu() {
+    const menu = document.querySelector('.Menu');
+    const LanguagImage=document.getElementById('LanguageImage');
+    LanguagImage.classList.add('DisplayHidden');  // before showing the menu on the screen, the language image will be hidden
+    menu.classList.toggle('show');
+}
