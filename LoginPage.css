@@ -434,7 +434,7 @@ nav ul img{
     padding-top: 20px;
     padding-bottom: 20px;
     
-   top: 290px;
+   top: 30%;
    left: 50%;  /* Moves the div to the center of the screen */
    transform: translateX(-50%); /* Adjusts for half of the div's width */
 }
@@ -446,7 +446,7 @@ nav ul img{
     
 }
 
-@media screen and (min-width:576px) and (max-width:768px){
+@media screen and (min-width:576px) and (max-width:830px){
    .hamburger-menu{
     display: none;
    }
@@ -503,7 +503,7 @@ nav ul img{
 .LoginPart{
     width: 45%;
     padding-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .SignInLogo img{
     height: 80px;
@@ -517,11 +517,13 @@ nav ul img{
 
 
 .RegistrationForm{
-    width: 50%;
+    width: 55%;
 
-    top: 270px;
+    top: 26%;
     left: 50%;  /* Moves the div to the center of the screen */
     transform: translateX(-50%); /* Adjusts for half of the div's width */
+
+    padding-bottom: 70px;
 }
 .Reg-Confirm button{
     margin-bottom: 40px;
@@ -529,13 +531,101 @@ nav ul img{
 
 }
 
-@media screen and (min-width:768px) and (max-width:992px){
+@media screen and (min-width:830px) and (max-width:1030px){
     .hamburger-menu{
         display: none;
-       }
+    }
+
+    nav{ 
+        width: 100%;
+        border: 1px solid yellow;
+    }
+    .PLogo_PName div{
+        margin-left: 0px;
+     }
+    nav ul{
+        margin-right: 10px;
+    }
+    
+    .LanguageButton{
+        font-size: 21px;
+        width: 160px;
+    }
+    .RegistrationButton{
+        font-size: 21px;
+    }
+    
+    
+    /* Login And Welcome part styles */
+    
+    
+
+    .Login-Welcome{
+        width: 100%;
+        margin: 50px auto;
+        flex-direction: column-reverse;
+        align-items: center;   
+    }
+    .WelcomePart{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .WelcomePart h1{
+      text-align: center;
+    }
+    .WelcomePart p{
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    
+    
+    /* Login Part styles */
+    
+    
+    
+    .LoginPart{
+        width: 40%;
+        padding-bottom: 20px;
+        margin-top: 100px;
+    }
+    .SignInButton button{
+        margin-top: 30px;
+        height: 45px;
+        width: 170px;
+        font-size: 25px;
+    }
+    
+    
+    
+    /* Registration form styles */
+    
+    
+    
+    .RegistrationForm{
+        width: 55%;
+    
+        top: 37%;
+        left: 50%;  /* Moves the div to the center of the screen */
+        transform: translateX(-50%); /* Adjusts for half of the div's width */
+    
+        padding-bottom: 70px;
+    }
+    .Reg-Confirm button{
+        margin-bottom: 40px;
+        height: 50px;
+        width: 200px;
+        font-size: 25px;
+    }
+    
+    #Reg-Cancel{
+        height: 40px;
+        width: 150px;
+        font-size: 25px;
+    }
 }
 
-@media screen and (min-width:992px) and (max-width:1550px){
+@media screen and (min-width:1030px) and (max-width:1550px){
     .hamburger-menu{
         display: none;
     }
