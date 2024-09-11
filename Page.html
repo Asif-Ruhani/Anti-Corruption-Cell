@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="LoginPage.css">
+</head>
+<body>  
+
+    <nav>
+        <div class="PLogo_PName">
+             <div class="lOGO"><img src="Images/White logo.png" alt=""></div>
+
+             <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+             </div>
+            <!-- <img src="Images/Sign_In_Logo.png" alt="">
+            <h1>Anti-Corruption Cell</h1> -->
+        </div>
+
+        <ul class="Menu" id="menu">
+            <div class="LanguageImage" id="LanguageImage"><img src="Images/LanguageIcon-removebg-preview.png" alt=""></div>
+            <li><button onclick="ToggleLanguage()" class="LanguageButton">Language<span>&#9662;</span></button>
+                <div class="DropDownContent" id="DropDownContent">
+                    <a href="">English</a>
+                    <a href="">Bangla</a>
+                </div>
+            </li>
+            <li><a href="">Instruction</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><button class="RegistrationButton" onclick="RegistrationFormOpen()">Registration</button></li>
+        </ul>
+
+    </nav>
+
+
+   <main>
+
+    <div class="Login-Welcome">
+        <div class="LoginPart " id="RegistrationForm">
+            <div class="SignInLogo"><img src="Images/Sign_In_Logo.png" alt=""></div>
+           <div class="InputField">
+              <input id="UserName" type="text" placeholder="User name">
+              <input id="Password" type="password" placeholder="Password">
+           </div>
+            <div class="SignInButton"><button>Sign in</button></div>
+       </div>
+
+       <div class="WelcomePart">
+        <h1>Welcome</h1>
+        <p>The Anti-Corruption Cell platform enables citizens to anonymously report corruption, while our team verifies and investigates complaints. By collaborating with authorities, we ensure transparency and accountability in tackling corruption.</p>
+       </div>
+    </div>
+
+
+
+    <div class="RegistrationForm DisplayHidden" id="RegForm">
+        <div class="RegImage"><img src="Images/Sign_In_Logo.png" alt=""></div>
+        <div class="Reg-InputField">
+            <input type="text" placeholder="Your name">
+            <input type="text" placeholder="Your NID">
+            <input type="text" placeholder="Your Phone number (According to NID)">
+        </div>
+        <div class="Reg-Confirm"><button>Confirm</button></div>
+        <button id="Reg-Cancel" onclick="RegistrationCancel()">Close</button>
+    </div>
+
+   </main>
+
+   <script src="LoginPage.js"></script>    
+</body>
+</html>

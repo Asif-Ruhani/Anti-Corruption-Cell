@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial Page</title>
+    <style>
+        
+        :root{
+        --border-color: yellow;
+        --text-color: white;
+        --background-color: skyblue;
+     }
+        
+        body{
+            background-color: cornflowerblue; 
+
+        }
+        .OuterDiv{
+            margin: 80px auto;
+            /* border: 1px solid var(--border-color); */
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .Logo{
+            /* border: 1px solid var(--border-color); */
+        }
+        .Logo img{
+            height: 250px;
+            width: 400px;
+        }
+        .Navigation{
+            /* border: 1px solid var(--border-color); */
+            width: 100%;
+            margin-top: 20px;
+        }
+        .Navigation ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .Navigation ul li{
+            list-style: none;
+        }
+        .Navigation ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 22px;
+        }
+        .Navigation ul li button{
+            height: 40px;
+            width: 170px;
+            border-radius: 10px;
+            background-color: transparent;
+            color: var(--text-color);
+            font-size: 19px;
+            /* border: 1px solid white; */
+            border: none;
+        }
+        .Navigation ul li a:hover{
+            color: rgba(0, 0, 255, 0.288);
+        }
+        .Navigation ul li button:hover{
+            color: rgba(0, 0, 255, 0.288);
+        }
+        .Navigation ul li:hover #DropDownContent{
+           display: block;
+        }
+        .LanguageIcon{
+            width: 23px;
+            height: 23px;
+            position: relative;
+            right: 167px;
+            top: 6px;
+        }
+        #DropDownContent{
+           display: none;
+           position: absolute;
+           margin-top: -0.8em;
+           /* border: 1px solid var(--border-color); */
+       }
+       #DropDownContent a{
+           text-decoration: none;
+           display: block;
+           margin-top: 10px;
+           font-size: 18px;
+           color: var(--text-color);
+           margin-left: 35px;
+        }
+        #DropDownContent a:hover{
+            color: rgba(0, 0, 255, 0.288);
+        }
+        .Paragraph{
+            /* border: 1px solid var(--border-color); */
+            margin-top: 50px;
+            font-size: larger;
+            text-align: center;
+            color: var(--text-color);
+        }
+        .ButtonDiv{
+            /* border: 1px solid var(--border-color); */
+        }
+        .ButtonDiv button{
+            height: 40px;
+            width: 170px;
+            border-radius: 10px;
+            background-color: transparent;
+            color: var(--text-color);
+            font-size: 19px;
+            margin: 50px 20px;
+            /* border: 1px solid var(--border-color); */
+            /* border: none; */
+        }
+
+
+
+
+        @media screen and (min-width:576px) and (max-width:930px) {
+        .OuterDiv{
+            margin: 50px auto;
+            width: 100%;
+        }
+        .Navigation{
+            width: 100%;
+        }
+        .Navigation ul li a{
+            font-size: 20px;
+        }
+        .Navigation ul li button{
+            width: 110px;
+            font-size: 18px;
+        }
+        .LanguageIcon{
+            width: 21px;
+            height: 21px;
+            right: 129px;
+            top: 4px;
+        }
+       #DropDownContent a{
+           margin-left: 12px;
+        }
+        .Paragraph{
+            margin-top: 20px;
+            font-size: large;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-bottom: 50px;
+        }
+
+    }
+
+    @media screen and (min-width:930px) and (max-width:1230px){
+        .OuterDiv{
+            margin: 100px auto;
+            width: 100%;
+        }
+        .Navigation ul li a{
+            font-size: 25px;
+        }
+        .Navigation ul li button{
+            width: 130px;
+            font-size: 22px;
+        }
+        .LanguageIcon{
+            width: 26px;
+            height: 26px;
+            right: 158px;
+            top: 7px;
+        }
+       
+       #DropDownContent a{
+           margin-left: 10px;
+        }
+        #DropDownContent a:hover{
+            color: rgba(0, 0, 255, 0.288);
+        }
+        .Paragraph{
+            margin-top: 20px;
+            font-size: larger;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-bottom: 100px;
+        }
+    }
+
+    @media screen and (min-width:1230px) and (max-width:1600px){
+        .OuterDiv{
+            margin: 40px auto;
+            border: 1px solid var(--border-color);
+            width: 80%;
+        }
+        .Navigation{
+            margin-top: 10px;
+        }
+        .Paragraph{
+            margin-top: 10px;
+        }
+
+    }
+
+    </style>
+</head>
+<body>
+   
+    <div class="OuterDiv">
+        <div class="Logo"><img src="Images/White logo.png" alt=""></div>
+        <div class="Navigation">
+            
+                <ul>
+                    <li><a href="Instruction.html">Instruction</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="ContactUs.html">Contact us</a></li>
+                    <li><button class="RegistrationButton" onclick="RegistrationFormOpen()">Registration</button></li>
+                    <li><button onclick="ToggleLanguage()" class="LanguageButton">Language<span>&#9662;</span></button>
+                        <img class="LanguageIcon" src="Images/LanguageIcon-removebg-preview.png" alt="">
+                        <div id="DropDownContent">
+                            <a href="">English</a>
+                            <a href="">Bangla</a>
+                        </div>
+                    </li>
+
+                </ul>
+            
+        </div>
+        <div class="Paragraph">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor distinctio illum expedita totam reprehenderit provident animi praesentium velit pariatur, maiores similique rem modi deserunt vitae placeat quo quibusdam dolores, officia earum iusto, excepturi assumenda molestias porro qui! Porro libero vero eaque veritatis praesentium blanditiis maxime maiores aliquid exercitationem atque consequatur similique, dignissimos sed quia assumenda voluptates doloremque rerum eligendi tempora amet recusandae perspiciatis vitae nulla! Molestias modi possimus blanditiis consequuntur odio dolor repellendus quod labore quia, iure iusto numquam saepe autem, voluptatibus temporibus. Aliquid beatae aspernatur laborum. Qui est quidem eligendi ipsam quis, fugit, vero voluptatum id dolore voluptatem ullam?</p>
+        </div>
+
+        <div class="ButtonDiv">
+            <button>Sign in</button>
+            <button>Registration</button>
+        </div>
+        
+    </div> 
+
+
+
+<script>
+  // Toggle Language option
+const ToggleLanguage = () => {
+    const Language=document.getElementById('DropDownContent');
+
+    if(Language.style.display === "block"){
+        Language.style.display = "none";
+    }
+    else{
+        Language.style.display = "block";
+    }
+}
+</script>
+</body>
+</html>
