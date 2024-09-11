@@ -416,7 +416,7 @@ nav ul img{
       text-align: center;
     }
     .LoginPart{
-        margin: 50px auto;
+        margin: 30px auto;
         width: 70%;
         padding-top: 20px;
         padding-bottom: 0px;
@@ -434,11 +434,9 @@ nav ul img{
     padding-top: 20px;
     padding-bottom: 20px;
     
-   position: fixed;
    top: 290px;
    left: 50%;  /* Moves the div to the center of the screen */
    transform: translateX(-50%); /* Adjusts for half of the div's width */
-   z-index: 1000; 
 }
 .RegImage img{
     height: 80px;
@@ -452,15 +450,92 @@ nav ul img{
    .hamburger-menu{
     display: none;
    }
+
+   nav{
+    flex-direction: column;
+    
+    width: 100%;
+    margin: 20px auto;
+}
+nav ul{
+    width: 90%;
+    column-gap: 30px;
+    padding-left: 0px;
+}
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+}
+nav ul img{
+    left: 62px;
+}
+ .PLogo_PName div{
+    margin-left: 0px;
+ }
+
+
+/* Login And Welcome part styles */
+
+
+.Login-Welcome{
+    width: 100%;
+    margin: 20px auto;
+    flex-direction: column-reverse;
+    align-items: center;   
+}
+.WelcomePart{
+    width: 90%;
+    padding-top: 0px;
+}
+.WelcomePart h1{
+  text-align: center;
+}
+.WelcomePart p{
+    text-align: center;
 }
 
-@media screen and (min-width:768px) and (max-width:1000px){
+
+
+/* Login Part styles */
+
+
+
+.LoginPart{
+    width: 45%;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.SignInLogo img{
+    height: 80px;
+    width: 80px;
+}
+
+
+
+/* Registration form styles */
+
+
+
+.RegistrationForm{
+    width: 50%;
+
+    top: 270px;
+    left: 50%;  /* Moves the div to the center of the screen */
+    transform: translateX(-50%); /* Adjusts for half of the div's width */
+}
+.Reg-Confirm button{
+    margin-bottom: 40px;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
     .hamburger-menu{
         display: none;
        }
 }
 
-@media screen and (min-width:1000px) and (max-width:1550px){
+@media screen and (min-width:992px) and (max-width:1550px){
     .hamburger-menu{
         display: none;
     }
