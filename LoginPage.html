@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+body{
+    background-color: cornflowerblue;
+}
+.loginOuterDiv{
+    /* border: 1px solid yellow; */
+    width: 22%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    border-right: 1px solid whitesmoke ;
+    border-left: 1px solid whitesmoke;
+
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.SignInLogo img{
+    height: 100px;
+    width: 100px;
+}
+.InputField, .Reg-InputField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.InputField input{
+    display: block;
+    width: 70%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding-left: 15px;
+    background-color: White;
+}
+.InputField input::placeholder{
+    color: rgba(0, 0, 0, 0.562);
+}
+.SignInLogo, .SignInButton{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.SignInButton button{
+    margin-top: 20px;
+    height: 35px;
+    width: 150px;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.329);
+    color: whitesmoke;
+}
+#UserName{
+    background-image: url('Images/UserIcon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center; /*Adjust as needed*/
+    background-size: 23px 23px;
+    padding-left: 40px;
+}
+#Password{
+    background-image: url('Images/PasswordIcon.png');
+    background-repeat: no-repeat;
+    background-position: 10px center; /*Adjust as needed*/
+    background-size: 18px 18px;
+    padding-left: 40px;
+}
+   
+   
+   </style>
+</head>
+<body>
+       
+    <div class="loginOuterDiv">
+            <div class="SignInLogo"><img src="Images/Sign_In_Logo.png" alt=""></div>
+            <div class="InputField">
+              <input id="UserName" type="text" placeholder="User name">
+              <input id="Password" type="password" placeholder="Password">
+           </div>
+            <div class="SignInButton"><button>Sign in</button></div>
+       </div>
+    </div>
+
+</body>
+</html>

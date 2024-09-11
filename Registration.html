@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+.RegistrationForm{
+    /* border: 1px solid yellow; */
+    width: 22%;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    border-right: 2px solid whitesmoke ;
+    border-left: 2px solid whitesmoke;
+
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.RegImage img{
+    height: 100px;
+    width: 100px;
+}
+.Reg-InputField input{
+    display: block;
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-left: 15px;
+    background-color: white;
+    border: 1px solid black;
+    
+}
+.RegImage, .Reg-Confirm{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.Reg-InputField input::placeholder{
+    color: rgba(0, 0, 0, 0.562);
+}
+.Reg-Confirm button{
+    margin-top: 40px;
+    height: 40px;
+    width: 180px;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.329);
+    color: whitesmoke;
+}
+#Reg-Cancel{
+    height: 35px;
+    width: 120px;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.329);
+    color: whitesmoke;
+
+    float: right;
+    margin-right: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="RegistrationForm" id="RegForm">
+        <div class="RegImage"><img src="Images/Sign_In_Logo.png" alt=""></div>
+        <div class="Reg-InputField">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="NID / Birth Registration Number">
+            <input type="text" placeholder="Phone number (According to NID)">
+        </div>
+        <div class="Reg-Confirm"><button>Confirm</button></div>
+        <button id="Reg-Cancel" onclick="RegistrationCancel()">Close</button>
+    </div>
+</body>
+</html>

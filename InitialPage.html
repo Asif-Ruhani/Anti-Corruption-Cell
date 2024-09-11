@@ -59,6 +59,9 @@
             /* border: 1px solid white; */
             border: none;
         }
+        .Navigation ul li button a{
+            font-size: 19px;
+        }
         .Navigation ul li a:hover{
             color: rgba(0, 0, 255, 0.288);
         }
@@ -112,6 +115,10 @@
             margin: 50px 20px;
             /* border: 1px solid var(--border-color); */
             /* border: none; */
+        }
+        .ButtonDiv a{
+            text-decoration: none;
+            color: white;
         }
 
 
@@ -212,7 +219,7 @@
                     <li><a href="Instruction.html">Instruction</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="ContactUs.html">Contact us</a></li>
-                    <li><button class="RegistrationButton" onclick="RegistrationFormOpen()">Registration</button></li>
+                    <li><button class="RegistrationButton"><a href="Registration.html">Registration</a></button></li>
                     <li><button onclick="ToggleLanguage()" class="LanguageButton">Language<span>&#9662;</span></button>
                         <img class="LanguageIcon" src="Images/LanguageIcon-removebg-preview.png" alt="">
                         <div id="DropDownContent">
@@ -229,8 +236,8 @@
         </div>
 
         <div class="ButtonDiv">
-            <button>Sign in</button>
-            <button>Registration</button>
+            <button><a href="LoginPage.html">Sign in</a></button>
+            <button><a href="Registration.html">Registration</a></button>
         </div>
         
     </div> 
