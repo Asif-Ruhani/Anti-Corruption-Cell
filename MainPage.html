@@ -10,7 +10,22 @@
     <div class="OuterDiv">
     <div class="Main">
         <Header class="HeadSection">
-            <h1>This is header section</h1>
+        <div class="Navigation">
+            <div class="Logo"><img src="Images/White logo.png" alt=""></div>
+            <ul class="Menu" id="menu">
+               <div class="LanguageImage" id="LanguageImage"><img src="Images/LanguageIcon-removebg-preview.png" alt=""></div>
+               <li><button onclick="ToggleLanguage()" class="LanguageButton">Language<span>&#9662;</span></button>
+                   <div id="DropDownContent">
+                       <a href="">English</a>
+                       <a href="">Bangla</a>
+                   </div>
+               </li>
+               <li><a href="">Instruction</a></li>
+               <li><a href="">About</a></li>
+               <li><a href="">Contact us</a></li>
+               <li><button class="RegistrationButton" onclick="RegistrationFormOpen()">Registration</button></li>
+           </ul>
+        </div>
         </Header>
 
         <div class="WhiteSpaceSection"></div>
@@ -18,7 +33,15 @@
     
     
         <div class="SubHeadSection ">
-             <h1>This is subheader section</h1>
+            <div class="FilterButton"><button>Filtered by<span> &#709;</span></button>
+                <div class="FilterDropDown">
+                    <button>Asif</button>
+                    <button>Shafeen</button>
+                    <button>Seyam</button>
+                    <button>Himel</button>
+                    <button>Mehedi</button>
+                </div>
+            </div>
         </div>
     
     
