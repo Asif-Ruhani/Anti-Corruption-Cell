@@ -43,10 +43,13 @@ body{
     left: 23.9%;  
 }
 .EachComplain{
-    background-color: lightgray;
-  padding-left: 10px;
-  padding-right: 10px;
+  background-color: lightgray;
+  padding: 0px 10px 2px 10px;
+  text-align: justify;
 }
+.EachComplain p{
+    margin-top: -1em;
+  }
 .MyComplain{
     width: calc(100% - 75%);
     position: fixed;
@@ -55,7 +58,11 @@ body{
     height: 40vh;
     z-index: 10;
     text-align: center;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    border: 1px solid gray;
+
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 .MyStats{
     width: calc(100% - 75%);
@@ -80,6 +87,10 @@ body{
 
 
 /* Header Section Styles */
+
+
+
+
 .DisplayHidden{
     display: none;
 }
@@ -157,6 +168,9 @@ body{
 /* Subheader Section styles */
 
 
+
+
+
 .SubHeadSection button{
    height: 35px;
    width: 130px;
@@ -168,21 +182,55 @@ body{
 .FilterDropDown{ 
     position: absolute;
     right: 3%;
-    top: 75px;
+    top: 55px;
     width: 135px;
+    height: 170px;
     background-color: lightgray;
     display: none;
 }
 .FilterDropDown button{
     border: none;
     background-color: transparent;
-    height: 10px;
-    width: 10px;
-    margin-top: 0;
+    height: 25px;
+    width: 90%;
+    margin-bottom: -1em;
+    text-align: left;
 }
 .FilterButton:hover .FilterDropDown{
     display: block;
     display: flex;
     flex-direction: column;
  }
+ .FilterDropDown button:hover{
+    color:brown;
+ }
 
+
+
+
+ /* My Complain section styles */
+
+
+
+ .Title{
+    background-color: lightgray;
+    position: fixed;
+    width: calc(100% - 75%);
+    z-index: 10;
+ }
+ #MyComplains{
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: absolute;
+    top: 19%;
+    width: 100%;
+ }
+ .MyEachComplain{
+    background-color: lightgray;
+   padding: 0px 10px 2px 10px;
+    text-align: justify;
+    margin: 0px 10px;
+  }
+  .MyEachComplain p{
+    margin-top: -1em;
+  }
