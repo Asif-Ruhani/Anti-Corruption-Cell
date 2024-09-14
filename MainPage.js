@@ -31,3 +31,43 @@ const MyComplain = () =>{
        MyComplain.appendChild(MyComplains);
   }
 }
+
+
+
+
+const MyStats = () =>{
+
+  const Complaints = {
+    Submitted: 75,
+    Rejected: 24,
+    Accepted: 51,
+    Solved: 43,
+    Processing: 8
+  };
+ 
+  const ctx = document.getElementById('statsChart').getContext('2d');
+  const statsChart = new Chart(ctx, {
+  type:'bar',
+  data: {
+    labels: ['Submitted', 'Rejected', 'Accepted','Solved','Processing'],
+    datasets: [
+      {
+      label: 'Statistics',
+      data: [Complaints.Submitted, Complaints.Rejected, Complaints.Accepted, Complaints.Solved, Complaints.Processing],
+      backgroundColor: ['skyblue','brown','green','red','cadetblue'],
+      borderWidth: 1
+     }
+    ]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+}
+);
+console.log('amar name asif vai , tomar name ki');
+}

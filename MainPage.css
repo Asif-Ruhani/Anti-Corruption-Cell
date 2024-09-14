@@ -71,7 +71,8 @@ body{
     right: 3.5%;
     height: 40vh;
     text-align: center;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    border: 1px solid gray;
 }
 .MyOperation{
     width: calc(100% - 80%);
@@ -212,7 +213,7 @@ body{
 
 
 
- .Title{
+ .MyComplainTitle{
     background-color: lightgray;
     position: fixed;
     width: calc(100% - 75%);
@@ -227,10 +228,26 @@ body{
  }
  .MyEachComplain{
     background-color: lightgray;
-   padding: 0px 10px 2px 10px;
+    padding: 0px 10px 2px 10px;
     text-align: justify;
     margin: 0px 10px;
   }
   .MyEachComplain p{
     margin-top: -1em;
+  }
+
+
+
+  /* My Statistics section styles */
+
+  .MyStatisticsTitle{
+    background-color: lightgray;
+    position: fixed;
+    width: calc(100% - 75%);
+  }
+  #statsChart {
+    display: block;
+    margin: 100px auto;
+    width: 99%;
+    height: auto; 
   }

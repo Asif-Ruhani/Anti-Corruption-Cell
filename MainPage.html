@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="MainPage.css">
 </head>
 <body>
@@ -60,19 +61,22 @@
     
     
         <div class="MyComplain " id="MyComplain">
-                <div class="Title"><h1>My Complains</h1></div>
+                <div class="MyComplainTitle"><h1>My Complains</h1></div>
                 <div id="MyComplains"></div>
         </div>
     
     
         <div class="MyStats ">
-              <h1>My Statitics</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quia quisquam mollitia laborum iure, ipsam placeat dolorum aspernatur commodi, fugit suscipit aliquam debitis. Sint placeat maiores nulla exercitationem! Similique, id laudantium earum cum quia asperiores. Autem error quasi facilis mollitia tenetur magnam adipisci quibusdam perferendis ab animi quaerat repellendus similique deleniti est quo quas! Quam dicta natus recusandae reprehenderit .</p>
+            <div class="MyStatisticsTitle"><h1>My Statistics</h1></div>
+            <canvas id="statsChart"></canvas>
         </div>
     </div>
     </div>
 
-    <button style="background-color: blue; color: white; height: 40px; width: 50px;" onclick="PublicComplain(); MyComplain()">click</button>
+    <button style="background-color: blue; color: white; height: 40px; width: 73px;" onclick="PublicComplain(); MyComplain()">Complains</button>
+  <br>
+    <button onclick="MyStats()" style="background-color: blue; color: white; height: 40px; width: 73px;">My Stats</button>
+    
   <script src="MainPage.js"></script>  
 </body>
 </html>
