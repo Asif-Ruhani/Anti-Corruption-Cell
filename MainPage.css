@@ -22,7 +22,7 @@ body{
 .WhiteSpaceSection{
     background-color: white;
     width: calc(100% - 9%);
-    height: 21vh;
+    height: 27vh;
     position: fixed;
     top: -3%;
     z-index: 8;
@@ -177,12 +177,20 @@ body{
    width: 130px;
    border-radius: 8px;
    font-size: 16px;
-   margin: 20px 30px 20px 0px;
+   margin: 20px 100px 20px 0px;
    float: right;
+}
+.SubmitComplaint button{
+    float: left;
+    height: 35px;
+    width: 250px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 100px;
 }
 .FilterDropDown{ 
     position: absolute;
-    right: 3%;
+    right: 11%;
     top: 55px;
     width: 135px;
     height: 170px;
@@ -245,9 +253,13 @@ body{
     position: fixed;
     width: calc(100% - 75%);
   }
-  #statsChart {
+  /* #statsChart {
     display: block;
     margin: 100px auto;
-    width: 99%;
+    width: 50%;
     height: auto; 
-  }
+  } */
+   canvas{
+    margin: 100px auto;
+    width: 100%;
+   }

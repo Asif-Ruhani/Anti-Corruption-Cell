@@ -52,9 +52,10 @@ const MyStats = () =>{
     labels: ['Submitted', 'Rejected', 'Accepted','Solved','Processing'],
     datasets: [
       {
-      label: 'Statistics',
+      label: '',
       data: [Complaints.Submitted, Complaints.Rejected, Complaints.Accepted, Complaints.Solved, Complaints.Processing],
       backgroundColor: ['skyblue','brown','green','red','cadetblue'],
+      border:['black','blue','yello','blue','red'],
       borderWidth: 1
      }
     ]

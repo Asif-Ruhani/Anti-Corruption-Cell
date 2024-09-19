@@ -26,6 +26,7 @@ nav ul{
     display: flex;
     align-items: center;
     column-gap: 40px;
+    border:1px solid white;
 }
 nav ul img{
     height: 25px;
