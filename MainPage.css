@@ -6,12 +6,12 @@
 body{
     margin-top: 0;
 }
-.OuterDiv{
+/* .OuterDiv{
    padding-left: 3%;
    padding-right: 3%;
-}
+} */
 .HeadSection{
-   width: calc(100% - 9%);
+   width: calc(100% - 3%);
    position: fixed;
    top: 0px;
    margin-top: 10px;
@@ -28,33 +28,19 @@ body{
     z-index: 8;
 }
 .SubHeadSection{
-    width: calc(100% - 55%);
+    width: calc(100% - 52%);
     position: fixed;
     top: 14%;
-    left: 23.9%;
+    left: 21%;
     z-index: 10;
     text-align: center;
     background-color: lightgray;
 }
-.PublicComplain{
-    width: calc(100% - 55%);
-    position: absolute;
-    top: 23%;
-    left: 23.9%;  
-}
-.EachComplain{
-  background-color: lightgray;
-  padding: 0px 10px 2px 10px;
-  text-align: justify;
-}
-.EachComplain p{
-    margin-top: -1em;
-  }
 .MyComplain{
-    width: calc(100% - 75%);
+    width: calc(100% - 72.3%);
     position: fixed;
     top: 14%;
-    right: 3.5%;
+    right: 0.5%;
     height: 40vh;
     z-index: 10;
     text-align: center;
@@ -65,10 +51,10 @@ body{
     scrollbar-width: none;
 }
 .MyStats{
-    width: calc(100% - 75%);
+    width: calc(100% - 72.3%);
     position: fixed;
     top: 56%;
-    right: 3.5%;
+    right: 0.5%;
     height: 40vh;
     text-align: center;
     /* background-color: lightgray; */
@@ -172,7 +158,7 @@ body{
 
 
 
-.SubHeadSection button{
+.FilterButton button{
    height: 35px;
    width: 130px;
    border-radius: 8px;
@@ -183,10 +169,10 @@ body{
 .SubmitComplaint button{
     float: left;
     height: 35px;
-    width: 250px;
-    border-radius: 8px;
-    font-size: 16px;
-    margin-left: 100px;
+   width: 250px;
+   border-radius: 8px;
+   font-size: 16px;
+   margin: 20px 0px 20px 100px;
 }
 .FilterDropDown{ 
     position: absolute;
@@ -217,6 +203,29 @@ body{
 
 
 
+
+ /* Public Complain section styles */
+
+
+
+
+
+ .PublicComplain{
+    width: calc(100% - 52%);
+    position: absolute;
+    top: 23%;
+    left: 21%;  
+}
+.EachComplain{
+  background-color: lightgray;
+  padding: 0px 10px 2px 10px;
+  text-align: justify;
+}
+.EachComplain p{
+    margin-top: -1em;
+}
+
+
  /* My Complain section styles */
 
 
@@ -224,7 +233,8 @@ body{
  .MyComplainTitle{
     background-color: lightgray;
     position: fixed;
-    width: calc(100% - 75%);
+    width: calc(100% - 72.3%);
+    height: 73px;
     z-index: 10;
  }
  #MyComplains{
@@ -251,7 +261,8 @@ body{
   .MyStatisticsTitle{
     background-color: lightgray;
     position: fixed;
-    width: calc(100% - 75%);
+    width: calc(100% - 72.3%);
+    height: 73px;
   }
   /* #statsChart {
     display: block;
@@ -261,5 +272,67 @@ body{
   } */
    canvas{
     margin: 100px auto;
-    width: 100%;
+    width: 98%;
+   }
+
+
+
+
+
+   /* Responsive styles */
+   @media screen and (min-width:1030px) and (max-width:1550px){
+        
+    .HeadSection{
+        width: calc(100% - 4.2%);
+     }
+     .WhiteSpaceSection{
+         height: 31vh;
+     }
+     .SubHeadSection{
+         width: calc(100% - 54%);
+         top: 16.5%;
+         left: 21.6%;
+     }
+     .MyComplain{
+         top: 16.5%;
+     }
+     .MyStats{
+         top: 58.5%;
+         height: 37vh;
+     }
+     .MyOperation{
+         top: 16.5%;
+         height: 79vh;
+     }
+     
+     /* Header Section Styles */
+     
+     .Navigation{
+         padding-left: 50px;
+         padding-right: 50px;
+     }
+     
+     /* Subheader Section styles */
+     
+     .FilterButton button{
+        margin: 20px 50px 20px 0px;
+     }
+     .SubmitComplaint button{
+        margin: 20px 0px 20px 50px;
+     }
+     .FilterDropDown{ 
+        right: 8%;
+    }
+    .FilterDropDown button{
+        margin-bottom: -1em;
+    }
+     
+      /* Public Complain section styles */
+
+      .PublicComplain{
+         width: calc(100% - 54%);
+         top: 25%;
+         left: 21.6%;  
+     }
+     
    }
